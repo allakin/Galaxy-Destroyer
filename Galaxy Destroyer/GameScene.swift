@@ -238,16 +238,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         switch levelNumber {
         case 1: levelDuration = 1.0
         case 2: levelDuration = 0.8
-        case 3: levelDuration = 0.6
-        case 4: levelDuration = 0.4
-        case 5: levelDuration = 0.2
+        case 3: levelDuration = 0.5
+        case 4: levelDuration = 0.3
         default:
-            levelDuration = 0.5
+            levelDuration = 0.7
         }
         let spawn = SKAction.run(spawnEnemy)
-        let spawnFire = SKAction.run(fireBullet)
         let waitToSpawn = SKAction.wait(forDuration: levelDuration)
-        let spawnSequence = SKAction.sequence([waitToSpawn, spawnFire, spawn])
+        let spawnSequence = SKAction.sequence([waitToSpawn, spawn])
         let spawnForever = SKAction.repeatForever(spawnSequence)
         self.run(spawnForever, withKey: "spawningEnemies")
     }
@@ -314,6 +312,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if currentGameState == gameState.preGame {
             startGame()
+            spawnFire()
         }
     }
     
