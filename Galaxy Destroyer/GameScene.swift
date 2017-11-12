@@ -65,7 +65,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         for i in 0...1 {
             let background = SKSpriteNode(imageNamed: "background")
             background.size = self.size
-            background.anchorPoint = CGPoint(x: 0.2, y: 0)
+            background.anchorPoint = CGPoint(x: 0.5, y: 0)
             background.position = CGPoint(x: self.size.width/2, y: self.size.height * CGFloat(i))
             background.zPosition = 0
             background.name = "Background"

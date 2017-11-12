@@ -8,15 +8,26 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
+
+var backingAudio = AVAudioPlayer()
 
 class GameViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let filePath = Bundle.main.path(forResource: "menuSuondTrack", ofType: "mp3")
+        let audioURL = URL(fileURLWithPath: filePath!)
+        
+        do { backingAudio = try AVAudioPlayer(contentsOf: audioURL) }
+        catch { return print("Cannot find the audio") }
+        
+        backingAudio.numberOfLoops = -1
+        backingAudio.play()
+        
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            let scene = GameScene(size: CGSize(width: 1536, height: 2048))
+            let scene = MainMenuScene(size: CGSize(width: 1536, height: 2048))
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 

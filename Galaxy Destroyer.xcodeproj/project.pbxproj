@@ -21,6 +21,7 @@
 		3074726C1FB71FBD00EF91A6 /* gameSoundTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */; };
 		3074726D1FB71FBD00EF91A6 /* torpedo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 307472681FB71FBC00EF91A6 /* torpedo.wav */; };
 		D1C100661FB8275900AEA09B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C100651FB8275900AEA09B /* GameOverScene.swift */; };
+		D1C1006A1FB861DF00AEA09B /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C100691FB861DF00AEA09B /* MainMenuScene.swift */; };
 		F97425251FB7BBB500FAC7B0 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F97425241FB7BBB500FAC7B0 /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSoundTrack.mp3; sourceTree = "<group>"; };
 		307472681FB71FBC00EF91A6 /* torpedo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = torpedo.wav; sourceTree = "<group>"; };
 		D1C100651FB8275900AEA09B /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		D1C100691FB861DF00AEA09B /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		F97425241FB7BBB500FAC7B0 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				3074724B1FB7194000EF91A6 /* AppDelegate.swift */,
 				3074724D1FB7194000EF91A6 /* GameScene.sks */,
 				D1C100651FB8275900AEA09B /* GameOverScene.swift */,
+				D1C100691FB861DF00AEA09B /* MainMenuScene.swift */,
 				3074724F1FB7194000EF91A6 /* Actions.sks */,
 				307472511FB7194000EF91A6 /* GameScene.swift */,
 				307472531FB7194000EF91A6 /* GameViewController.swift */,
@@ -142,7 +145,7 @@
 				TargetAttributes = {
 					307472471FB7194000EF91A6 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C1006A1FB861DF00AEA09B /* MainMenuScene.swift in Sources */,
 				307472521FB7194000EF91A6 /* GameScene.swift in Sources */,
 				307472541FB7194000EF91A6 /* GameViewController.swift in Sources */,
 				D1C100661FB8275900AEA09B /* GameOverScene.swift in Sources */,
@@ -331,13 +335,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8TWS8D7QH8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Galaxy Destroyer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,13 +354,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8TWS8D7QH8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Galaxy Destroyer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
