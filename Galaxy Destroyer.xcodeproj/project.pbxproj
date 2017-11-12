@@ -20,6 +20,7 @@
 		3074726B1FB71FBD00EF91A6 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 307472661FB71FBC00EF91A6 /* lose.wav */; };
 		3074726C1FB71FBD00EF91A6 /* gameSoundTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */; };
 		3074726D1FB71FBD00EF91A6 /* torpedo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 307472681FB71FBC00EF91A6 /* torpedo.wav */; };
+		F97425251FB7BBB500FAC7B0 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F97425241FB7BBB500FAC7B0 /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		307472661FB71FBC00EF91A6 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSoundTrack.mp3; sourceTree = "<group>"; };
 		307472681FB71FBC00EF91A6 /* torpedo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = torpedo.wav; sourceTree = "<group>"; };
+		F97425241FB7BBB500FAC7B0 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3074724A1FB7194000EF91A6 /* Galaxy Destroyer */ = {
 			isa = PBXGroup;
 			children = (
+				F97425231FB7BB6F00FAC7B0 /* Fonts */,
 				307472631FB71FAF00EF91A6 /* Sounds */,
 				3074724B1FB7194000EF91A6 /* AppDelegate.swift */,
 				3074724D1FB7194000EF91A6 /* GameScene.sks */,
@@ -94,6 +97,14 @@
 				307472681FB71FBC00EF91A6 /* torpedo.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F97425231FB7BB6F00FAC7B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F97425241FB7BBB500FAC7B0 /* Starjout.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				307472571FB7194000EF91A6 /* Main.storyboard in Resources */,
 				307472691FB71FBD00EF91A6 /* menuSuondTrack.mp3 in Resources */,
 				3074726C1FB71FBD00EF91A6 /* gameSoundTrack.mp3 in Resources */,
+				F97425251FB7BBB500FAC7B0 /* Starjout.ttf in Resources */,
 				3074726A1FB71FBD00EF91A6 /* explosion.wav in Resources */,
 				3074724E1FB7194000EF91A6 /* GameScene.sks in Resources */,
 				307472591FB7194000EF91A6 /* Assets.xcassets in Resources */,
@@ -316,11 +328,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 799U77K8ES;
+				DEVELOPMENT_TEAM = 8TWS8D7QH8;
 				INFOPLIST_FILE = "Galaxy Destroyer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer";
+				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,11 +345,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 799U77K8ES;
+				DEVELOPMENT_TEAM = 8TWS8D7QH8;
 				INFOPLIST_FILE = "Galaxy Destroyer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer";
+				PRODUCT_BUNDLE_IDENTIFIER = "GoiOS-4.Galaxy-Destroyer.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
