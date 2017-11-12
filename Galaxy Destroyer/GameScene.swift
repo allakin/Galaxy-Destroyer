@@ -185,8 +185,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
             body1 = contact.bodyA
             body2 = contact.bodyB
-        }
-        else {
+        } else {
             body1 = contact.bodyB
             body2 = contact.bodyA
         }
