@@ -252,7 +252,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func spawnFire() {
         let spawnFire = SKAction.run(fireBullet)
-        let waitToSpawnFire = SKAction.wait(forDuration: 0.5)
+        let waitToSpawnFire = SKAction.wait(forDuration: 0.3)
         let spawnSequenceFire = SKAction.sequence([spawnFire, waitToSpawnFire])
         let spawnForeverFire = SKAction.repeatForever(spawnSequenceFire)
         self.run(spawnForeverFire)
