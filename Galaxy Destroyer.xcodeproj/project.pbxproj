@@ -20,6 +20,7 @@
 		3074726B1FB71FBD00EF91A6 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 307472661FB71FBC00EF91A6 /* lose.wav */; };
 		3074726C1FB71FBD00EF91A6 /* gameSoundTrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */; };
 		3074726D1FB71FBD00EF91A6 /* torpedo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 307472681FB71FBC00EF91A6 /* torpedo.wav */; };
+		D1C100661FB8275900AEA09B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C100651FB8275900AEA09B /* GameOverScene.swift */; };
 		F97425251FB7BBB500FAC7B0 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F97425241FB7BBB500FAC7B0 /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		307472661FB71FBC00EF91A6 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		307472671FB71FBC00EF91A6 /* gameSoundTrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSoundTrack.mp3; sourceTree = "<group>"; };
 		307472681FB71FBC00EF91A6 /* torpedo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = torpedo.wav; sourceTree = "<group>"; };
+		D1C100651FB8275900AEA09B /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		F97425241FB7BBB500FAC7B0 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				307472631FB71FAF00EF91A6 /* Sounds */,
 				3074724B1FB7194000EF91A6 /* AppDelegate.swift */,
 				3074724D1FB7194000EF91A6 /* GameScene.sks */,
+				D1C100651FB8275900AEA09B /* GameOverScene.swift */,
 				3074724F1FB7194000EF91A6 /* Actions.sks */,
 				307472511FB7194000EF91A6 /* GameScene.swift */,
 				307472531FB7194000EF91A6 /* GameViewController.swift */,
@@ -189,6 +192,7 @@
 			files = (
 				307472521FB7194000EF91A6 /* GameScene.swift in Sources */,
 				307472541FB7194000EF91A6 /* GameViewController.swift in Sources */,
+				D1C100661FB8275900AEA09B /* GameOverScene.swift in Sources */,
 				3074724C1FB7194000EF91A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
